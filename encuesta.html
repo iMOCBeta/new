@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+	 <meta name="author" content="mendoza oviedo maycol nay ">
+<meta name="description" content="redsocial">
+	<title>iMOC!</title>
+	<link href="iMOC.png" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" href="TRES DOS UNI.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<!--averiguar  sobre <pre> ----->
+
+<body>
+<!-- Header -->
+	<header id="header">
+	<h1 class="tinder"><font color="#ffffff"><a href="index.html" title="iMOC"><i>iMOC!</i></a></font></h1>
+<!--seleciones de opciones-->
+<div class="select" >
+<select  name="formal"  onchange="javascript:handleSelect(this)" title="Ordenar segun:">
+<option value="index"> Todos </option>
+<option value="Ciencias"> Facultad de Ciencias</option>
+<option value="Ingenieria"> Facultad de Ingenieria</option>
+<option value="Humanidades"> Facultad de Educacion y Humaninades</option>
+<option value="lOAD"> Salir de iMOC </option>
+</select>
+</div>
+<!--fin de las seleciones de opciones-->
+	<nav class="main">
+      <ul>
+        <li>Ver Mas</li>
+      </ul>
+    </nav>
+    </header>
+<br class="brclass1">
+<center>
+<div class="parte">
+<main class="keisha">
+ <section class="photoMO">              
+ <div class="initial">
+<span class="photo__icon"></span>
+
+<span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="casa.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Tareas" class="sec_noticias" ><img  class="imgparte1" src="line-chart.png"/><p class="dein">Noticias</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Eventos" class="sec_noticias" ><img  class="imgparte1" src="check.png"/><p class="dein">Blog </p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="pdf.png"/><p class="dein">LibrosLite</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Fotos" class="sec_noticias" ><img  class="imgparte1" src="headphones.png"/><p class="dein">Musica</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Clima" class="sec_noticias" ><img  class="imgparte1" src="peli.png"/><p class="dein">Video</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="MusicaLite" class="sec_noticias" ><img  class="imgparte1" src="doctor.png"/><p class="dein">TuDoctor</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="eventos.png"/><p class="dein">Eventos</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="PeliculasLite" class="sec_noticias" ><img  class="imgparte1" src="checklist.png"/><p class="dein">Calificacion</p></a> </span>
+  <span class="photo__icon">
+ <a href="eco.html" title="LibrosLite"  class="sec_noticias"><img  class="imgparte1" src="settings.png"/><p class="dein">iMOC bot</p></a></span>
+                    </div>           
+            </section>
+        </main>
+    </div></center>
+
+
+<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+
+  <i ><img  class="ir" src="iMOC.png" alt="" width="80" height="80"></i>
+</a>
+<!---script para que funcione arriba -->
+
+<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
+
+<!---fin de script para que funcione arriba-->
+    <br class="brclass">
+    <style >
+ 
+
+      .encuesta{
+   margin: auto;
+        background: #fff;
+        margin-top: 15px;
+    
+        width: 100%;
+        height: 100%;
+
+
+
+
+      }
+
+      .sec-encuesta{
+  
+       margin:40px 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+
+      }
+
+
+.slider_banner {
+  overflow: hidden;
+  z-index: 1000;
+  position: relative;
+  height: 140px;
+}
+
+.slider_banner .banner {
+  position: relative;
+  width: 100%; 
+}
+
+.slider_banner .banner img {
+  vertical-align: top;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+    </style>
+    <div class="encuesta">
+      <section class="sec-encuesta">
+        <div class="slider_banner">
+        <img class="banner" src="Encuesta.jpg" alt="">
+        <div class="nombrelogo"><font color="#56d25b"> iMOC!</font> </div>
+        <div class="textoencima"><h3 class="tittle" 
+      "> <font color="#fff"> <i>Encuesta de satisfacción</i> </font></h3></div>
+      </div>
+      </section>
+    </div>
+    <style>
+.nombrelogo{
+ position: absolute;
+ font-size: 40px;
+ margin-top: 30px;
+ margin-left:  170px;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+    .textoencima{
+      position: absolute;
+    top: 50%;
+    left: 900px;
+    transform: translate(-50%, -50%);
+    }
+}
+
+h3{
+  margin:0; 
+  font-family: 'Rasa', serif;
+  color: #232323;
+}
+h3.tittle {
+    color: #232323;
+    font-size: 58px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h3.tittle span {
+    color: #56d25b;
+}
+/*para los parrafos p*/
+
+p{
+ 
+  font-family: 'Rasa', serif;
+  letter-spacing:1px;
+  font-size:30px;
+  color:#999;
+  text-align: center;
+  line-height:1.1em;
+}
+.sub{font-family: 'Rasa', serif;
+ color:#999;
+ letter-spacing:1px;
+   text-align: center;
+}
+
+
+    </style>
+    <center>
+<p class="parrafo" 
+      "><i> Ayudanos a brindar un mejor servicio en iMOC!</i></p><sub class="sub">Responde la encuenta
+      y compartela a tus amigos</sub>  </center>
+    <br>
+    <div class="row">
+<main class="feed">
+ <section class="photo">
+                
+                <div class="photo__file-container" id="feedback-bg-info">
+                  <center>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchYXahjKyFMR9wAQxfPosaWkXR8-TS33-PlwFlqwp2qUB68A/viewform?embedded=true" width="100%" height="780px" frameborder="0" marginheight=100% marginwidth="0">Cargando...</iframe>
+</center>
+                </div> 
+                        
+                <div class="photo__info">
+                   <span class="photo__time-ago">35 minutos</span><br>
+                   
+                  
+                    
+                    <!---stylos del nuevo inputout tipo button , nuevo---->
+                    <style type="text/css" media="screen">
+                     
+
+
+
+                        .button--ujarak {
+                     
+  -webkit-transition: border-color 0.4s, color 0.4s;
+  transition: border-color 0.4s, color 0.4s;
+
+}
+.button--ujarak::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #82E0AA;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak.button--round-s::before {
+  border-radius: 2px;
+}
+.button--ujarak.button--inverted::before {
+  background: #7986CB;
+}
+.button--ujarak,
+.button--ujarak::before {
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak:hover {
+  color: #fff;
+  border-color: #37474f;
+}
+.button--ujarak.button--inverted:hover {
+  color: #37474F;
+  border-color: #fff;
+}
+.button--ujarak:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.bg-1 {
+  background: #58D68D;
+  color: #fff;
+}
+
+/* Common button styles */
+.button {
+  float: center;
+  width: 100%;
+  display: block;
+  margin-left: 10px;
+  color:#fff;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+  outline: none;
+}
+.button > span {
+  vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.bg-1 .button {
+  color: #37474f;
+  border-color: #37474f;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.button--text-thin {
+  font-weight: 300;
+}
+.button--text-medium {
+  font-weight: 500;
+}
+.button--text-thick {
+  font-weight: 600;
+}
+.button--round-s {
+  border-radius: 5px;
+}
+.button--round-m {
+  border-radius: 15px;
+}
+.button--round-l {
+  border-radius: 40px;
+}
+
+/* Borders */
+.button--border-thin {
+  border: 1px solid;
+   margin-left: 0px;
+}
+.button--border-medium {
+  border: 2px solid;
+   margin-left: 0px;
+}
+.button--border-thick {
+  border: 3px solid;
+   margin-left: 0px;
+}</style>
+                   
+                    <center>
+                   <div class="box bg-1"><a href="">
+          <button   class="button button--ujarak button--border-thin button--text-thick">
+     
+  
+        <h1 class="logo">Compartir esta Nota</h1></button></a>
+                  </center>
+                    <span class="photo__likes"></span>                   
+                    <div class="photo__add-comment-container">
+                       <!-- <textarea placeholder="Add a comment..." class="photo__add-comment"></textarea>-->
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+            </section>
+
+
+<br>
+
+
+
+
+  </body>
+  </html>

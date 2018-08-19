@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+	 <meta name="author" content="mendoza oviedo maycol nay ">
+<meta name="description" content="redsocial">
+	<title>iMOC!</title>
+	<link href="logo.png" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" href="TRES DOS UNI.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+ 
+  <link href="css/main.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+</head>
+<!--averiguar  sobre <pre> ----->
+
+<body>
+<!-- Header -->
+	<header class="oscuro" id="header">
+		<!---estilos del header del nombre iMOC----->
+		<style type="text/css">
+			.tinder{
+				margin-top: -5px;
+				margin-left: -20px;
+				
+				font-size: 40px;
+				 font-family: 'Lobster', cursive;;
+			}
+		</style>
+	<h1 class="tinder"><font color="#ffffff"><a href="index.html" title="iMOC"><i>iMOC<sub>BETA</sub></i></a></font></h1>
+<!--seleciones de opciones-->
+<div class="select" >
+<select  name="formal"  onchange="javascript:handleSelect(this)" title="Ordenar segun:">
+<option value="index"> Todos </option>
+<option value="Ciencias"> Facultad de Ciencias</option>
+<option value="Ingenieria"> Facultad de Ingenieria</option>
+<option value="Humanidades"> Facultad de Educacion y Humaninades</option>
+<option value="lOAD"> Salir de iMOC </option>
+</select>
+</div>
+<!--fin de las seleciones de opciones-->
+
+	<nav class="main">
+      <ul>
+      	<section class="apagarx">
+       <input class="apagar" type="button" id="btnInvertirColores" value="Ojos Secos" />
+   </section>
+       <!------styles de apagar y encender--------->
+       <style type="text/css">
+       	.apagar{
+       		height: 33px;
+       		margin-top: 1px;
+       	
+       		border-radius: 20%;
+       	background-color: transparent;
+
+       	}
+       	.apagarx{
+       		height: 30px;
+
+       	}
+
+       </style>
+      </ul>
+    </nav>
+    </header>
+<br class="brclass1">
+<center>
+<div class="parte">
+	<center>  
+<main class="keisha">
+  
+ <section class="photoMO">  
+         
+ <div class="initial">
+
+
+<span class="photo__icon">
+ <a href="index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="casa.png"/><p class="dein">Inicio</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Tareas" class="sec_noticias" ><img  class="imgparte1" src="line-chart.png"/><p class="dein">Noticias</p></a> </span>
+ <span class="photo__icon">
+ <a href="seccion2/index.html" title="Eventos" class="sec_noticias" ><img  class="imgparte1" src="check.png"/><p class="dein">Blog </p></a> </span>
+ <span class="photo__icon">
+ <a href="libroslite.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="pdf.png"/><p class="dein">LibrosLite</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="Fotos" class="sec_noticias" ><img  class="imgparte1" src="headphones.png"/><p class="dein">Musica</p></a> </span>
+ <span class="photo__icon">
+ <a href="videos/videos.html" title="Clima" class="sec_noticias" ><img  class="imgparte1" src="peli.png"/><p class="dein">Video</p></a> </span>
+ <span class="photo__icon">
+ <a href="index.html" title="MusicaLite" class="sec_noticias" ><img  class="imgparte1" src="doctor.png"/><p class="dein">TuDoctor</p></a> </span>
+ <span class="photo__icon">
+ <a href="mensajescelebre/index.html" title="Inicio" class="sec_noticias" ><img  class="imgparte1" src="eventos.png"/><p class="dein">Eventos</p></a> </span>
+ <span class="photo__icon">
+ <a href="encuesta.html" title="PeliculasLite" class="sec_noticias" ><img  class="imgparte1" src="checklist.png"/><p class="dein">Calificacion</p></a> </span>
+  <span class="photo__icon">
+ <a href="eco.html" title="LibrosLite"  class="sec_noticias"><img  class="imgparte1" src="settings.png"/><p class="dein">iMOC bot</p></a></span>
+ 
+                    </div>        
+            </section>  
+        </main></center> 
+    </div></center>
+
+
+
+<!---este es del input para poner todoo de negro---->
+
+<style>
+.black {
+  background-color: black;
+  color: white;
+}
+
+/* Colores que tendra por default */
+
+body {
+  background-color: transparent;
+  color: black;
+}
+.parte{
+  background-color: transparent;
+  color: black; 
+}
+
+.select {
+  background-color: transparent;
+  color: black; 
+}
+.photo{
+  background-color: transparent;
+  color: black; 
+}
+
+.apagarx{
+  background-color: transparent;
+  color: black;
+}
+
+</style>
+<!----script para cubiri todo de negro-------->
+<script>
+	$("#btnInvertirColores").click(function(){
+  // Asigna o desasigna la clase black
+  $("body").toggleClass('black');
+});
+		$("#btnInvertirColores").click(function(){
+  // Asigna o desasigna la clase black
+  $(".select").toggleClass('black');
+});
+
+	$("#btnInvertirColores").click(function(){
+  // Asigna o desasigna la clase black
+  $(".apagarx").toggleClass('black');
+});
+
+	$("#btnInvertirColores").click(function(){
+  // Asigna o desasigna la clase black
+  $(".parte").toggleClass('black');
+});
+	
+		$("#btnInvertirColores").click(function(){
+  // Asigna o desasigna la clase black
+  $(".photo").toggleClass('black');
+});
+
+
+
+	</script>
+
+	<!-------fin de script que oscurese----->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+
+  <i ><img  class="ir" src="iMOC.png" alt="" width="80" height="80"></i>
+</a>
+<!---script para que funcione arriba -->
+
+<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
+
+<!---fin de script para que funcione arriba-->
+    <br class="brclass">
+
+
+
+
+
+
+
+
+                  <!-----inicio del button------>
+                     <!---stylos del nuevo inputout tipo button , nuevo---->
+                    <style type="text/css" media="screen">
+                     
+
+
+
+                        .button--ujarak {
+                     
+  -webkit-transition: border-color 0.4s, color 0.4s;
+  transition: border-color 0.4s, color 0.4s;
+
+}
+.button--ujarak::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #82E0AA;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale3d(0.7, 1, 1);
+  transform: scale3d(0.7, 1, 1);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak.button--round-s::before {
+  border-radius: 2px;
+}
+.button--ujarak.button--inverted::before {
+  background: #7986CB;
+}
+.button--ujarak,
+.button--ujarak::before {
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak:hover {
+  color: #fff;
+  border-color: #37474f;
+}
+.button--ujarak.button--inverted:hover {
+  color: #37474F;
+  border-color: #fff;
+}
+.button--ujarak:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.bg-1 {
+  background: #58D68D;
+  color: #fff;
+}
+
+/* Common button styles */
+.button {
+  float: center;
+  width: 100%;
+  display: block;
+  margin-left: 10px;
+  color:#fff;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+  outline: none;
+}
+.button > span {
+  vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.bg-1 .button {
+  color: #37474f;
+  border-color: #37474f;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.button--text-thin {
+  font-weight: 300;
+}
+.button--text-medium {
+  font-weight: 500;
+}
+.button--text-thick {
+  font-weight: 600;
+}
+.button--round-s {
+  border-radius: 5px;
+}
+.button--round-m {
+  border-radius: 15px;
+}
+.button--round-l {
+  border-radius: 40px;
+}
+
+/* Borders */
+.button--border-thin {
+  border: 1px solid;
+   margin-left: 0px;
+}
+.button--border-medium {
+  border: 2px solid;
+   margin-left: 0px;
+}
+.button--border-thick {
+  border: 3px solid;
+   margin-left: 0px;
+}</style>
+                   
+                    <!-----fin de button------>
+    <br class="brclass">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+
+
+
+
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+     <br class="brclass">
+<center>
+
+   <br class="brclass">
+
+
+
+
+
+
+
+<center>
+
+     <!----------------------section1------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                </header>
+            
+               <center>
+ <div class="post-thumb">
+              <div id="post-carousel"  class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#post-carousel" data-slide-to="1"></li>
+                  <li data-target="#post-carousel" data-slide-to="2"></li>
+                  <li data-target="#post-carousel" data-slide-to="3"></li>
+                  <li data-target="#post-carousel" data-slide-to="4"></li>
+                  <li data-target="#post-carousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <a href="#"><img class="img-responsive" width="100%"  src="1.png" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" width="100%"  src="2.png" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" width="100%"   src="3.png" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" width="100%"   src="4.png" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" width="100%"   src="5.png" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" width="100%"   src="6.png" alt=""></a>
+                  </div>
+
+                </div>                               
+                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+              </div>                            
+             
+              <div class="post-icon">
+                <i class="fa fa-picture-o"></i>
+              </div>
+            </div>
+
+               </center>
+              
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="section5"><p></p></div>
+<div id="section51"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar5()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar5(){
+
+   document.getElementById("section5").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("section51").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+              
+
+
+
+                      <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+
+                  --->
+                      
+
+                 
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                   
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!----------------------section2------------------------->
+            <section class="photo">
+                <header class="photo__header">
+
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Respaldos de WhatsApp dejarán de consumir espacio en Google Drive</h1><hr>
+
+                <div class="photo__file-container">
+               <center>
+               	<!---
+
+               	<iframe src="https://www.uns.edu.pe/#/noticias/" style="border:5px ##EC7063 solid;" name="Ultimas Noticias de la Universidad Nacional del Santa" scrolling="yes" frameborder="1" marginheight="px" marginwidth="120px" height="120px" width="500px"></iframe>
+
+               	----->
+               	<a href="">
+               		<img src="wa.jpg" width="100%" alt="">
+               	</a>
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="section5"><p></p></div>
+<div id="section51"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar5()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar5(){
+
+   document.getElementById("section5").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("section51").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+<br>
+
+
+
+
+     <!----------------------section1------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                </header>
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Un dia con un Ingeniero de software
+                 </h1><hr>
+             <div class="photo__file-container">
+               <center>
+             
+               	<video preload="auto"  autoplay poster="1.png" loop controls download >
+               		<source src="/media/video.oga">
+               		<source src="mayuko.mp4">
+               		<object type="video/ogg" data="/media/video.oga" width="100%" height="240">
+               		<param name="src" value="/media/video.oga">
+
+               		<param name="autoplay" value="false">
+               		<param name="autoStart" value="0">
+               		<p><a href="/media/video.oga">Download this video file.</a></p>
+               		</object>
+               	</video>
+
+
+ 
+               </center>
+           </div>
+              
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="section5"><p></p></div>
+<div id="section51"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar5()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar5(){
+
+   document.getElementById("section5").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("section51").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+              
+
+
+
+                      <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+
+
+
+
+
+
+
+
+
+                  <!-----inicio de botones sociales ----->
+                  <style  >
+                  .al{
+	position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald';
+    display: block;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+   	width: 60px;
+	text-align: center;
+	
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	transform: translate(0, 0);
+ 
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+ 
+height:54px;
+cursor:pointer;
+overflow:hidden;
+ 
+font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+ 
+.al:active {
+   -webkit-transform: translate(0, 3px);
+	-moz-transform: translate(0, 3px);
+	transform: translate(0, 3px);
+}
+
+.al.twitter-small{
+ -webkit-box-shadow: 0px 6px 0px #2695BC;
+    -moz-box-shadow: 0px 6px 0px #2695BC;
+    box-shadow: 0px 6px 0px #2695BC;
+}
+.al.twitter-small{background:#2CA9E1 url("images/twitter.png") no-repeat center center;}
+ 
+.al.twitter-small:active{ -webkit-box-shadow: 0px 2px 0px #2695BC;
+    -moz-box-shadow: 0px 2px 0px #2695BC;
+    box-shadow: 0px 2px 0px #2695BC;
+}
+
+
+               </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                      
+
+                 
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                   
+                </div>
+            </section>
+
+             <ul>
+<li><a class="al"  href="#" class="twitter-small">Twitter</a></li>
+<li><a class="al" href="#" class="facebook-small">Facebook</a></li>
+<li><a class="al" href="#" class="pinterest-small">Pinterest</a></li>
+<li><a class="al" href="#" class="gplus-small">GPlus</a></li>
+<li><a class="al" href="#" class="rss-small">RSS</a></li>
+<li><a class="al" href="#" class="dribbble-small">Dribbble</a></li>
+<li><a class="al" href="#" class="linkedin-small">Linkedin</a></li>
+<li><a class="al" href="#" class="flickr-small">Flickr</a></li>
+<li><a class="al" href="#" class="stumble-small">Stumbleupon</a></li>
+<li><a class="al" href="#" class="vimeo-small">Vimeo</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!----------------------section3------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Google soluciona un problema en su Asistente por el que no reconocía el comando 'OK, Google'
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+               	<iframe width="100%" height="315" src="https://www.youtube.com/embed/QPbPm43ounU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+               </center>
+           </div>
+               
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="section5"><p></p></div>
+<div id="section51"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar5()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar5(){
+
+   document.getElementById("section5").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("section51").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+     <!----------------------section4------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Google soluciona un problema en su Asistente por el que no reconocía el comando 'OK, Google'
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+               	<img src="google.jpg" width="100%">
+               	
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectiongoogle"><p></p></div>
+<div id="sectiongooglex"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Leer Nota  ⬇" onclick="recargargoogle()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargargoogle(){
+
+   document.getElementById("sectiongoogle").innerHTML = " <center><p>Google ha solucionado un problema en el asistente de voz que impedía reconocer el comando 'Ok Google' para iniciar su funcionamiento en algunos casos, mientras que en otros las opciones de voz del asistente quedaban deshabilitadas o se instaba a realizar una reconfiguración en bucle que no solucionaba el error</p> <br><p>Según comentan los usuarios, en otros dispositivos el asistente sí detectaba el comando, aunque no funcionaba como debía e instaba a realizar una reconfiguración por medio de Voice Match que no solucionaba el problema, sino que daba lugar a un bucle al redirigir una y otra vez a la configuración.</p> </center> ";
+   document.getElementById("sectiongooglex").innerHTML = " <center><p>Al margen del error de la activación por voz, el asistente ha funcionado bien durante este tiempo, ya que se podía activar a través del botón de inicio o mediante su aplicación. El problema no parece estar ligado a un modelo, marca o versión de sistema operativo en concreto, pues ha afectado de forma similar a dispositivos de distintas características.</p><br><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a> <hr> </center>";
+  }
+</script>
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+            <br>
+
+
+
+     <!----------------------section5------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">¿Que es el diseño UX ? y ¿Por que desarrollador un diseño UX?
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+               	<img src="ux.jpg" width="100%">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionux"><p></p></div>
+<div id="sectionuxx"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarux()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarux(){
+
+   document.getElementById("sectionux").innerHTML = "<center><hr><p>El diseño UX significa <b>experiencia de usuario</b> ,este es el resultado de conjuntos de factores y elementos relativos a la interacción del usuario, con un entorno o dispositivo concretos, cuyo resultado es la generación de una percepción positiva o negativa de dicho servicio, producto o dispositivo. Ésta depende no solo de los factores relativos al diseño (hardware, software, usabilidad, diseño de interacción, accesibilidad, diseño gráfico y visual, calidad de los contenidos, buscabilidad o encontrabilidad, utilidad, etc) sino además de aspectos relativos a las emociones, sentimientos, construcción y transmisión de la marca, confiabilidad del producto, etc.</p><br>  <p></p></center> ";
+   document.getElementById("sectionuxx").innerHTML = " <center><p>⇗ <b>Diseño centrado en el humano</b> <br>⇗<b> Diseño centrado en el usuario</b> <br>⇗  <b>Diseño centrado en la experiencia</b> <hr> </p><br><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a><hr></center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+
+            <br>
+
+
+
+
+
+
+
+     <!----------------------section6------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Google presenta Android 9 Pie, la nueva actualización de su sistema operativo móvil
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+            <img src="pie.jpg" width="100%">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionpi"><p></p></div>
+<div id="sectionpie"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarpie()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarpie(){
+
+   document.getElementById("sectionpi").innerHTML = " <center><hr><p>Google ha presentado este martes Android 9 Pie, la última versión del sistema operativo móvil que se apoya en la Inteligencia Artificial (IA) para aprender de los hábitos del usuario y así optimizar el funcionamiento de las aplicaciones y la batería.    Google continúa con su línea de elegir dulces para el nombre de las nuevas versiones de su sistema operativo, y ha revelado el nombre completo de la última actualización del software de Android, Android 9 Pie, como ha informado  la compañía por medio de un comunicado en su página web. </p>   <br> <p>La Novedad :</p> </center> ";
+
+   document.getElementById("sectionpie").innerHTML = "<center> <p>Para optimizar el uso de la batería, Google ha introducido características de batería y brillo adaptativos. Con la IA, el dispositivo es capaz de reconocer qué aplicaciones son las más usadas y prioriza el uso de batería en estas, mientras que el brillo de la pantalla también se adapta en función de los hábitos que el móvil recoge a partir del uso de aplicaciones.</p><br><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a><hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+            <br>
+
+
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Samsung Galaxy X, el móvil flexible, recibe impresionantes renders en 3D
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+             <img src="galaxy.jpg" width="100%">
+
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionga"><p></p></div>
+<div id="sectiongala"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargargalaxy()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargargalaxy(){
+
+   document.getElementById("sectionga").innerHTML = " <center><hr><p>Samsung patentó un curioso diseño que mostraría una versión flexible de sus celulares. Rápidamente se convirtió en el Samsung Galaxy X , a modo de nombre clave. Se espera que sea anunciado en el próximo CES de las Vegas a finales del 2018.</p>   <br></center> ";
+   document.getElementById("sectiongala").innerHTML = " <center> <p>A través de las patentes el diseñador  Jonas Dahnert creó los siguientes renders en 3D que mostrarían lo que él imagina que sería la versión final. El Samsung Galaxy X funcionaría con una bisagra para convertirlo en un aparato mucho más compacto a lo que estamos acostumbrados</p><br><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a> <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+
+
+
+
+     <!----------------------section2------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Mi Drop, la app de Xiaomi para compartir archivos entre dispositivos Android sin Internet
+                 </h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+               <img src="drop.jpg" width="100%">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectiondr"><p></p></div>
+<div id="sectiondro"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarmidro()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarmidro(){
+
+   document.getElementById("sectiondr").innerHTML = " <center><hr><p>Intercambiar archivos con nuestros amigos puede ser una tarea complicada si se desea conservar la calidad de los mismos. Enviar una foto o vídeo por WhatsApp significa compresión y pérdida de detalle, además de consumir los escasos datos de nuestra tarifa. Por fortuna, existen algunas aplicaciones que nos permiten enviar archivos sin compresión, en cuestión de segundos y sin consumir ni un solo mega de Internet. Una de ellas es Mi Drop, y te aseguramos que te va a encantar</p> <br><p>Ha sido desarrollada por Xiaomi y está disponible en todos sus terminales y en Google Play, lo que significa que es compatible con una vasta inmensidad de dispositivos. ¿Cómo funciona? ¿Usa el Bluetooth? No exactamente. Mi Drop hace uso de la tecnología WiFi Direct, que permite crear una conexión privada entre dos dispositivos. Una especie de intranet. El dispositivo emisor de archivos se conecta a la red que emite el receptor, lo que permite una velocidad de transferencia 200 veces superior a la del Bluetooth (según Xiaomi).</p></center> ";
+   document.getElementById("sectiondro").innerHTML = " <center><p>La interfaz es realmente sencilla. Consta de dos botones (“Enviar” y “Recibir”). Si pulsas en “Recibir”.........</p><br><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a><hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+
+
+
+
+     <!----------------------section2------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Google lanza "Tus miniaturas": los nuevos stickers a tu imagen y semejanza que puedes crear desde Gboard
+                 </h1><hr>
+
+         
+
+                <div class="photo__file-container">
+               <center>
+               
+               <img src="go.jpg" width="100%" alt="">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectiong"><p></p></div>
+<div id="sectiongoo"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarb()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarb(){
+
+   document.getElementById("sectiong").innerHTML = " <center><p>El teclado de Google en su versión 7.5 beta te permitirá crear tu propio avatar, un personaje basado en ti que luego podrás compartir en tus conversaciones y redes sociales a través de sus stickers.</p> <br><p>La nueva tienda de pegatinas de Gboard ha estrenado la nueva sección Tus miniaturas. Aquí con el uso de la cámara y de su editor de avatares, crearemos dos paquetes de pegatinas a nuestra imagen y semejanza..........</p></center> ";
+   document.getElementById("sectiongoo").innerHTML = " <center><p><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a></p><hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+
+
+            <br>
+
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">La ‘app’ que encuentra personas en internet con solo dos fotos
+                 </h1><hr>
+
+
+
+
+
+
+         
+
+                <div class="photo__file-container">
+               <center>
+             <img src="t.jpg" width="100%" alt="">
+               	
+
+
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectiont"><p></p></div>
+<div id="sectiontt"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Leer Nota  ⬇" onclick="recargart()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargart(){
+
+   document.getElementById("sectiont").innerHTML = " <center> <hr>  <br><p> Un grupo de investigadores en seguridad cibernética, de la firma Trustwave, acaba de lanzar una herramienta de inteligencia artificial que puede identificar con mucha facilidad a las personas en las diferentes redes sociales que hay en internet.</p></center> ";
+   document.getElementById("sectiontt").innerHTML = " <center> <p>“Con listas de 1000 personas, puede tomar más de 15 horas y usar una gran cantidad de ancho de banda, dependiendo de qué opciones se seleccionen. Recomendaría ejecutar la herramienta durante la noche en una máquina con una buena conexión a Internet por estas razones”, dijo un vocero de Trustwave sobre el alcance de su ‘app’.</p><br><p>“Una vez que se han verificado todos los sitios de redes sociales, la etapa 3 de la herramienta se activa y comienza a generar informes. Social Mapper tiene una variedad de resultados: genera un archivo csv con enlaces a las páginas de perfil de la lista de objetivos y un informe HTML”, finalizó.</p> <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+
+
+                 <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">El adolescente que hackeó a Apple para poder trabajar en la empresa</h1><hr>
+
+                <div class="photo__file-container">
+               <center>
+               	<!---
+
+               	<iframe src="https://www.uns.edu.pe/#/noticias/" style="border:5px ##EC7063 solid;" name="Ultimas Noticias de la Universidad Nacional del Santa" scrolling="yes" frameborder="1" marginheight="px" marginwidth="120px" height="120px" width="500px"></iframe>
+
+               	----->
+               	<img src="a.jpg" width="100%" alt="">
+               	
+
+
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionx"><p></p></div>
+<div id="sectionxx"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Leer Nota  ⬇" onclick="recargarx()"/></center>
+<style>
+	p{
+		font-size: 18px;
+		font-family: 'Bree Serif', serif;
+		color: #566573;
+	}
+</style>
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarx(){
+
+   document.getElementById("sectionx").innerHTML = " <center><hr><br> <p>⇗ Un australiano de 16 años enfrenta cargos penales tras ser acusado de haber ingresado ilegalmente a la red de Apple y adueñarse de 90 gigas de datos de usuarios de la compañía tecnológica, informó 'The Age'.</p></center> ";
+   document.getElementById("sectionxx").innerHTML = " <center><p> El joven accedió desde su casa, en Melbourne, varias veces en el transcurso de un año. Todo lo que necesitó fueron túneles informáticos, una técnica que permite adentrase en un red de computadoras </p><hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+               
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Con estas aplicaciones tu móvil con Android será mucho más útil</h1><hr>
+         
+
+                <div class="photo__file-container">
+               <center>
+             <img src="aplicaionesutiles.jpg" width="100%">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionap"><p></p></div>
+<div id="sectionapp"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarapps()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarapps(){
+
+   document.getElementById("sectionap").innerHTML = " <center><hr><p>En la plataforma digital, Google Play, hay un montón de apps de cualquier interés para sus usuarios. A pesar de esta gran ventaja, para muchos buscar entre tantas opciones buenos aliados para que el móvil sea mucho más útil de lo que resulta ser es algo difícil. Por esta razón, si tú eres uno de ellos, deberás optar por algunas de las mejores aplicaciones útiles para tu móvil que aparecerán en este top.</p> <br><p>Las aplicaciones que podrás ver a continuación te podrán ayudar a que tu móvil sea bastante útil para tu cotidianidad y lo mejor de todo, es que podrás conseguirlas fácilmente forma gratuita. Descubre las características de cada opción y bájate en tu dispositivo la que mas te guste.</p> </center> ";
+   document.getElementById("sectionapp").innerHTML = " <center> <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">Con estas aplicaciones tu móvil con Android será mucho más útil</h1><hr>
+         
+         
+
+                <div class="photo__file-container">
+               <center>
+               <img src="">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="section5"><p></p></div>
+<div id="section51"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargar5()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargar5(){
+
+   document.getElementById("section5").innerHTML = " <center><hr>⌦   Libro recomendado para estudiantes de medicina y emfermeria .... <hr> <h1></h1> <br>⇗   Autor : Desconocido   <br>⇗ Año impreso: 2012 <br> ⇗ Ciudad : España </center> ";
+   document.getElementById("section51").innerHTML = " <center>⇗ Editora : MC Graw Hill <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+     <!----------------------section7------------------------->
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img  class="photo__avatar" src="alfa.png"  />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">AlfaOmega</span>
+                       <span class="photo__location"><font color="#566573"> Los Angeles </font></span>
+                    </div>
+                   
+
+                </header>
+
+                  <h1  style="font-size: 25px;
+               font-family: 'Lobster', cursive;
+                color: #273746 ;
+                text-decoration: line-through;
+                text-decoration: blink;
+                display: inline-block;
+                text-align: center;
+                border:0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                ">2 años y 500 millones de descargas después, ¿sigue teniendo futuro Google Duo?</h1><hr>
+         
+         
+
+                <div class="photo__file-container">
+               <center>
+              <img src="Google-Duo.jpg" width="100%">
+               </center>
+                </div>
+                <div class="photo__info"> 
+                  <!---reseña--->
+<div id="sectionduo"><p></p></div>
+<div id="sectiongo-duo"><p></p></div>
+<br>
+<center>
+<input  class="flecha" type="button" value="Recomendaciones  ⬇" onclick="recargarDuo()"/></center>
+
+
+                       <script type="text/javascript">
+//Función recargar que cambia lo que hay en id="caja" por el contenido nuevo.
+  function recargarDuo(){
+
+   document.getElementById("sectionduo").innerHTML = " <center><hr><p>Seguramente recordarás que hace dos años, Google lanzó al mercado dos apps que prometían revolucionar la mensajería y la comunicación en Android: Google Allo y Google Duo. La primera de ellas se quedó en otra app de mensajes del montón cuyos usuarios son completamente residuales, mientras que la segunda, enfocada a las videollamadas, parece que sí ha funcionado algo mejor. El objetivo de esta era sustituir a Google Hangouts, el Skype de la Gran G, ¿pero cómo ha quedado la cosa? ¿Sigue teniendo sentido una app como Google Duo? 2 años y 500 millones de descargas después, vamos a intentar obtener una respuesta..........</p> <br></center> ";
+   document.getElementById("sectiongo-duo").innerHTML = " <center>⇗ <p><a href= ><p ><font color=blue>CONTINUAR LEYENDO</font></p></a></p> <hr> </center>";
+
+
+  }
+</script>
+
+<br>
+<!--fin---->
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  <!---
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                    <center>
+                   <div class="box bg-1">
+          <button class="button button--ujarak button--border-thin button--text-thick">Compartir esta Nota</button>
+                  </center>
+                  --->
+                    <span class="photo__likes"></span>
+                    
+                    <span class="photo__time-ago">11 hours ago</span>
+                    
+                </div>
+            </section>
+
+
+            <br>
+
+
+
+
+
+
+
+            <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+<!---
+
+
+<iframe src="https://www.uns.edu.pe/#/eventos/" style="border:5px ##EC7063 solid;" name="Ultimas Eventos de la Universidad Nacional del Santa" scrolling="yes" frameborder="1" marginheight="px" marginwidth="120px" height="120px" width="500px"></iframe>
+
+
+
+------>
+
+
+
+
+
+
+
+<br>
+
+
+
+
+  </body>
+  </html>
